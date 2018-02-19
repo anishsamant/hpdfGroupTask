@@ -15,22 +15,22 @@ export default class MatchResult extends Component {
                     <Text style={styles.title}>Sample invocation :- </Text>
                     <List>
                         <ListItem>
-                            <Text style={styles.text}>Alexa, ask ipl search, Did "teamA" win the match against "teamB" on "date_of_match"</Text>
+                            <Text style={styles.text}>Alexa, start ipl search, Did "teamA" win the match against "teamB" on "date_of_match"</Text>
                         </ListItem>
                         <ListItem>
-                            <Text style={styles.text}>Alexa, ask ipl search, Tell me the result of the match between "teamA" and "teamB" on "date_of_match"</Text>
+                            <Text style={styles.text}>Alexa, start ipl search, Tell me the result of the match between "teamA" and "teamB" on "date_of_match"</Text>
                         </ListItem>
                         <ListItem>
-                            <Text style={styles.text}>Alexa, ask ipl search, Tell me about the winner of the match between "teamA" and "teamB" the date of the match is "date_of_match"</Text>
+                            <Text style={styles.text}>Alexa, start ipl search, Tell me about the winner of the match between "teamA" and "teamB" the date of the match is "date_of_match"</Text>
                         </ListItem>
                         <ListItem>
-                            <Text style={styles.text}>Alexa, ask ipl search, Give me the match result between "teamA" and "teamB" that took place on "date_of_match"</Text>
+                            <Text style={styles.text}>Alexa, start ipl search, Give me the match result between "teamA" and "teamB" that took place on "date_of_match"</Text>
                         </ListItem>
                         <ListItem>
-                            <Text style={styles.text}>Alexa, ask ipl search, Who won the match between "teamA" and "teamB" on "date_of_match"</Text>
+                            <Text style={styles.text}>Alexa, start ipl search, Who won the match between "teamA" and "teamB" on "date_of_match"</Text>
                         </ListItem>
                         <ListItem>
-                            <Text style={styles.text}>Alexa, ask ipl search, Who was the winner in the match of "teamA" versus "teamB" that took place on "date_of_match"</Text>
+                            <Text style={styles.text}>Alexa, start ipl search, Who was the winner in the match of "teamA" versus "teamB" that took place on "date_of_match"</Text>
                         </ListItem>
                     </List>
 
@@ -46,11 +46,11 @@ const styles = {
     title: {
         color: 'black',
         margin: 10,
-        fontSize: 18,
+        fontSize: 20,
     },
     text: {
         color: 'rgba(0,0,0,0.9)',
-        fontSize: 16,
+        fontSize: 18,
 
     },
     card: {

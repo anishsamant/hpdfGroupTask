@@ -9,25 +9,19 @@ export default class MatchSummary extends Component {
             <LinearGradient colors={['#fff6ce', '#fffdf4']} style={{ flex: 1 }}>
             <ScrollView>
                 <Text style={[styles.title]}>
-                    Alexa will summarize the match that was played on a paticular date.
+                    Alexa will give a count of the total number of matches played in the IPL until the 2017 season.
                 </Text>
                 <View style={styles.card}>
                     <Text style={styles.title}>Sample invocation :- </Text>
                     <List>
                         <ListItem>
-                            <Text style={styles.text}>Alexa, start ipl search, Please give summary of the match that took place on "date_of_match"</Text>
+                            <Text style={styles.text}>Alexa, start ipl search, What is the total number of matches played ever in IPL"</Text>
                         </ListItem>
                         <ListItem>
-                            <Text style={styles.text}>Alexa, start ipl search,Give highlights of the match that took place on "date_of_match"</Text>
+                            <Text style={styles.text}>Alexa, start ipl search, What is the total number of matches played ever in Indian Premier League</Text>
                         </ListItem>
                         <ListItem>
-                            <Text style={styles.text}>Alexa, start ipl search, Summarize the match played on "date_of_match"</Text>
-                        </ListItem>
-                        <ListItem>
-                            <Text style={styles.text}>Alexa, start ipl search, Give details of that match that was played on "date_of_match"</Text>
-                        </ListItem>
-                        <ListItem>
-                            <Text style={styles.text}>Alexa, start ipl search, Tell me more about the match played on "date_of_match"</Text>
+                            <Text style={styles.text}>Alexa, start ipl search, How many matches played by teams in IPL</Text>
                         </ListItem>
                     </List>
 

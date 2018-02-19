@@ -15,19 +15,19 @@ export default class ManOfMatch extends Component {
                     <Text style={styles.title}>Sample invocation :- </Text>
                     <List>
                         <ListItem>
-                            <Text style={styles.text}>Alexa, ask ipl search, Who was the player of the match on "date_of_match"</Text>
+                            <Text style={styles.text}>Alexa, start ipl search, Who was the player of the match on "date_of_match"</Text>
                         </ListItem>
                         <ListItem>
-                            <Text style={styles.text}>Alexa, ask ipl search, Who was awarded the man of the match that took place on "date_of_match"</Text>
+                            <Text style={styles.text}>Alexa, start ipl search, Who was awarded the man of the match that took place on "date_of_match"</Text>
                         </ListItem>
                         <ListItem>
-                            <Text style={styles.text}>Alexa, ask ipl search, Who was the best player of the match that took place on "date_of_match"</Text>
+                            <Text style={styles.text}>Alexa, start ipl search, Who was the best player of the match that took place on "date_of_match"</Text>
                         </ListItem>
                         <ListItem>
-                            <Text style={styles.text}>Alexa, ask ipl search, Who was the man of the match for the match that took place on "date_of_match"</Text>
+                            <Text style={styles.text}>Alexa, start ipl search, Who was the man of the match for the match that took place on "date_of_match"</Text>
                         </ListItem>
                         <ListItem>
-                            <Text style={styles.text}>Alexa, ask ipl search, Which player showed best performance in the match that took place on "date_of_match"</Text>
+                            <Text style={styles.text}>Alexa, start ipl search, Which player showed best performance in the match that took place on "date_of_match"</Text>
                         </ListItem>
                     </List>
 
@@ -43,11 +43,11 @@ const styles = {
     title: {
         color: 'black',
         margin: 10,
-        fontSize: 18,
+        fontSize: 20,
     },
     text: {
         color: 'rgba(0,0,0,0.9)',
-        fontSize: 16,
+        fontSize: 18,
 
     },
     card: {

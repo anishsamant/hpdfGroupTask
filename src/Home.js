@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, ScrollView } from 'react-native';
+import { Text, View, ScrollView, TouchableOpacity } from 'react-native';
 import { List, ListItem, Icon } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 import LinearGradient from 'react-native-linear-gradient';
@@ -22,25 +22,15 @@ export default class Home extends Component {
                     </List>
                 </View>
                 <View style={styles.card}>
-                <Text style={[styles.title]}>
-                    Currently we have 3 types of queries that can be invoked. {'\n'}
-                    Tap on them to know more about them.
-                </Text>
-                    <List>
-                        <ListItem button style={styles.listItem} onPress={() => { Actions.matchSummary(); }}>
-                            <Text style={styles.text}>Match Summary</Text>
-                            <Icon name="ios-arrow-forward-outline" />
-                        </ListItem>
-                        <ListItem button style={styles.listItem} onPress={() => { Actions.manOfMatch(); }}>
-                            <Text style={styles.text}>Man of the Match</Text>
-                            <Icon name="ios-arrow-forward-outline" />
-                        </ListItem>
-                        <ListItem button style={styles.listItem} onPress={() => { Actions.matchResult(); }}>
-                            <Text style={styles.text}>Match Result:</Text>
-                            <Icon name="ios-arrow-forward-outline" />
-                        </ListItem>
-                    </List>
-
+                    <Text style={[styles.title]}>
+                        Currently we have 5 types of queries that can be invoked. {'\n'}
+                        Tap on them to know more about them.
+                    </Text>
+                </View>
+                <View style={styles.buttonView}>
+                    <TouchableOpacity transparent style={{height: 50}} onPress={()=> {Actions.intents();}}>
+                        <Text style={styles.buttonText} >Click to proceed</Text>
+                    </TouchableOpacity>
                 </View>
             </ScrollView>
             </LinearGradient>
@@ -52,12 +42,12 @@ const styles = {
     title: {
         color: 'black',
         margin: 10,
-        fontSize: 18,
+        fontSize: 20,
         textAlign: 'center'
     },
     text: {
         color: 'rgba(0,0,0,0.9)',
-        fontSize: 16,
+        fontSize: 18,
 
     },
     card: {
@@ -70,5 +60,18 @@ const styles = {
     },
     listItem: {
         justifyContent: 'space-between'
+    },
+    buttonView: {
+        margin: 2,
+        marginTop: 20,
+        elevation: 1,
+        borderWidth: 5,
+        height: 50,
+        backgroundColor: '#ffff33'
+    },
+    buttonText: {
+        textAlign: 'center',
+        color: '#004d00',
+        fontSize: 23
     }
 };
