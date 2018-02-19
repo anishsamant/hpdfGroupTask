@@ -3,7 +3,7 @@ import { Text, View, ScrollView } from 'react-native';
 import { List, ListItem } from 'native-base';
 import LinearGradient from 'react-native-linear-gradient';
 
-export default class MatchSummary extends Component {
+export default class AboutIPL extends Component {
     render() {
         return (
             <LinearGradient colors={['#fff6ce', '#fffdf4']} style={{ flex: 1 }}>
